@@ -10,30 +10,20 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PointF;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cabinet.bezir.utils.ScreenUtils;
 import com.cabinet.bezir.view.TreeView;
-import com.cabinet.bezir.view.VerticalTextView;
 import com.plattysoft.leonids.ParticleSystem;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -100,6 +90,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Tree
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.image_anima:
+                v.setEnabled(false);
                 startLrc();
                 player = MediaPlayer.create(MainActivity.this, R.raw.jiushiaini);
                 player.start();
