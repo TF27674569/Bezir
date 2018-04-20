@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffee"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.cabinet.bezir.MainActivity">
+
+    <com.cabinet.bezir.view.TreeView
+        android:id="@+id/treeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/image_anima"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="center"
+        android:background="@mipmap/heart3" />
+
+    <ImageView
+        android:id="@+id/ivShadow"
+        android:layout_width="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_shadow"
+        android:layout_height="6dp" />
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:textColor="#f02635"
+        android:text="1531351"
+        android:textSize="24sp"
+        android:layout_height="60dp" />-->
+
+
+</LinearLayout>
